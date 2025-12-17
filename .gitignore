@@ -1,0 +1,38 @@
+# ====================
+# C语言/单片机学习专用
+# ====================
+
+# 编译文件
+*.o
+*.obj
+*.exe
+*.out
+*.elf
+*.hex
+*.bin
+*.map
+
+# 构建目录
+build/
+Debug/
+Release/
+
+# IDE配置（完全忽略，个人项目推荐）
+.vscode/
+.idea/
+*.code-workspace
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*~
+*.bak
+*.tmp
+*.swp
+
+# 日志文件（如果要保留，移到docs/目录）
+# *.log
+# *.txt
