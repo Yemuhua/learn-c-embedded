@@ -1,4 +1,3 @@
-//指针运算实际以指向类型的大小为单位的地址移动
 #include<stdio.h>
 
 int main()
