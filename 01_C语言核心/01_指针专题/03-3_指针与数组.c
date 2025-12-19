@@ -16,7 +16,7 @@ int main()
      printf("*(arr[0]+1)=%d\n", *(arr[0]+1));
     
     printf("*(*(arr+1)+2)=%d\n", *(*(arr+1)+2)); //arr+1表示二维数组的第二行首地址
-    printf("*arr[2]=%d\n", *arr[2]); //arr[2]表示二维数组的第三行首地址
+    printf("*arr[2]=%d\n", *arr[2]); //arr[2]表示二维数组的第三行首地址 
         
     
     
