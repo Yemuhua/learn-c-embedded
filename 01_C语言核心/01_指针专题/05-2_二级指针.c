@@ -10,7 +10,7 @@ int main()
     
     for(int i=0;i<row;i++)//为每行分配列空间
     {
-        matrix[i]=(int*)malloc(cols*sizeof(int*));
+        matrix[i]=(int*)malloc(cols*sizeof(int));
     }
 
     for(int i=0;i<row;i++)//赋值
