@@ -10,8 +10,8 @@ printf("====指针与数组====\n");
 printf("ptr=%s\n",ptr);//hello
 
 //sizeof的区别
-printf("sizeof(ptr)=%zu（指针大小）\n",sizeof(ptr));//8
-printf("sizeof(str1)=%zu（数组大小）\n",sizeof(str1));//6
+printf("sizeof(ptr)=%zu(指针大小)\n",sizeof(ptr));//8
+printf("sizeof(str1)=%zu(数组大小)\n",sizeof(str1));//6
 
 //字符串常量不可修改（字符指针不可以，数组可以）
 
