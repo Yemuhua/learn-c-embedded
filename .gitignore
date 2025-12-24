@@ -35,4 +35,4 @@ desktop.ini
 
 # 日志文件（如果要保留，移到docs/目录）
 # *.log
-# *.txt
+*.txt
