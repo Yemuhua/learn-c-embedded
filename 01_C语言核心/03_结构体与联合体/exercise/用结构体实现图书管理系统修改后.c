@@ -14,30 +14,25 @@ Book books[MAX_BOOKS];
 int bookCount = 0;  
 
 void addBook() {
-    if (bookCount >= MAX_BOOKS)//修改逻辑，防止数组越界
-    {
-        printf("库存已满！无法添加新书。\n");
+    if (bookCount >= MAX_BOOKS) {
+        printf("图书库已满！\n");
         return;
     }
     
-    printf("请输入添加图书信息\n");
-    printf("书名: ");
-    scanf_s("%49s", books[bookCount].name, (unsigned)_countof(books[bookCount].name));//使用countof宏自动计算缓冲区大小
+    printf("请输入书名: ");
+    scanf("%49s", books[bookCount].name);
     
-    printf("作者: ");
-    scanf_s("%49s", books[bookCount].author, (unsigned)_countof(books[bookCount].author));
+    printf("请输入作者: ");
+    scanf("%49s", books[bookCount].author);
     
-    printf("ISBN: ");
-    scanf_s("%19s", books[bookCount].ISBN, (unsigned)_countof(books[bookCount].ISBN));
+    printf("请输入价格: ");
+    scanf("%f", &books[bookCount].price);
     
-    printf("价格: ");
-    scanf_s("%f", &books[bookCount].price);
+    printf("请输入库存数量: ");
+    scanf("%d", &books[bookCount].stock);
     
-    printf("库存: ");
-    scanf_s("%d", &books[bookCount].stock);
-    
-    bookCount++; 
-    printf("添加成功！当前图书总数：%d\n", bookCount);
+    bookCount++;
+    printf("图书添加成功！\n");
 }
 
 Book* selectBook() {
